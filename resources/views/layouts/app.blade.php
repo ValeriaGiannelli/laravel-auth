@@ -26,12 +26,17 @@
         {{-- qui ci andrà la nav bar --}}
         @include('admin/partials/header')
     <div class="contant-fluid d-flex my_view">
-        {{-- qui la side bar --}}
-        @include('admin.partials.sidebar')
+
+        {{-- solo se è autentificato mostra la barra laterale --}}
+        @auth
+            {{-- qui la side bar --}}
+            @include('admin.partials.sidebar')
+
+        @endauth
+
         {{-- qui il contenuto che cambierà a seconda della sezione visualizzata --}}
         <div class="content">
             @yield('content')
-
         </div>
 
     </div>
