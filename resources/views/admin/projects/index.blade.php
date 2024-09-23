@@ -33,6 +33,8 @@
                                     <i class="fa-solid fa-pencil"></i>
                                 </a>
 
+                                @include('admin.partials.formDelete')
+
                             </td>
                     </tr>
                 @endforeach

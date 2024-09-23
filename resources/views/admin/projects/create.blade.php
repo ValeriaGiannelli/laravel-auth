@@ -31,7 +31,7 @@
         </div>
         <div class="col-md-6">
             <label for="img" class="form-label">URL immagine(*)</label>
-            <input type="text" class="form-control @error('img') is-invalid @enderror" id="img" name="img" placeholder="Inserisci l'URL dell'immagine" value="{{old('thumb')}}">
+            <input type="text" class="form-control @error('img') is-invalid @enderror" id="img" name="img" placeholder="Inserisci l'URL dell'immagine" value="{{old('img')}}">
 
             @error('img')
                 <small class="text-danger"> {{$message}} </small>
@@ -64,7 +64,7 @@
 
         <div class="col-12">
             <label for="description" class="form-label">Descrizione del progetto</label>
-            <textarea class="form-control" name="description" id="description" cols="30" rows="10" placeholder="Descrizione del progetto"></textarea>
+            <textarea class="form-control" name="description" id="description" cols="30" rows="10" placeholder="Descrizione del progetto">{{old('description')}}</textarea>
 
         </div>
 
