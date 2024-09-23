@@ -8,7 +8,7 @@
                 <a href="{{route('admin.projects.index')}}">Projects</a>
             </li>
             <li>
-                <a href="">New Project</a>
+                <a href="{{route('admin.projects.create')}}">New Project</a>
             </li>
         </ul>
     </div>
