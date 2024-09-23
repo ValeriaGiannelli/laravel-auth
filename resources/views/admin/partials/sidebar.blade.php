@@ -5,7 +5,7 @@
                 <a href="{{route('admin.home')}}">Home</a>
             </li>
             <li>
-                <a href="">Projects</a>
+                <a href="{{route('admin.projects.index')}}">Projects</a>
             </li>
             <li>
                 <a href="">New Project</a>
