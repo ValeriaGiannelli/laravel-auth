@@ -10,7 +10,7 @@ class Project extends Model
     use HasFactory;
     protected $casts = [
         "start_date" => "datetime",
-        "end_Date" => "datetime",
+        "end_date" => "datetime",
     ];
 
     protected $fillable = [
