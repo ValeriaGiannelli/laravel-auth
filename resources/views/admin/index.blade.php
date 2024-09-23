@@ -3,24 +3,10 @@
 @section('content')
 <div class="container">
     <h2 class="fs-4 text-secondary my-4">
-        {{ __('Dashboard') }}
+        Dashboard dei progetti
     </h2>
     <div class="row justify-content-center">
-        <div class="col">
-            <div class="card">
-                <div class="card-header">{{ __('User Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('status') }}
-                    </div>
-                    @endif
-
-                    Dashboard che si vede unicamente nell'admin
-                </div>
-            </div>
-        </div>
+        <h3>Ti diamo il benvenuto! Ci sono {{$projects}} progetti</h3>
     </div>
 </div>
 @endsection

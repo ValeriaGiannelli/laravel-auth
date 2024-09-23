@@ -22,12 +22,14 @@
 <body>
         {{-- qui ci andrà la nav bar --}}
         @include('admin/partials/header')
-
+    <div class="contant-fluid d-flex">
         {{-- qui la side bar --}}
         @include('admin.partials.sidebar')
         {{-- qui il contenuto che cambierà a seconda della sezione visualizzata --}}
 
         @yield('content')
+
+    </div>
 
     </div>
 </body>
