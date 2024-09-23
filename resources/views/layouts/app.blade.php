@@ -10,6 +10,9 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    {{-- fontawesome --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -22,12 +25,14 @@
 <body>
         {{-- qui ci andrà la nav bar --}}
         @include('admin/partials/header')
-    <div class="contant-fluid d-flex">
+    <div class="contant-fluid d-flex my_view">
         {{-- qui la side bar --}}
         @include('admin.partials.sidebar')
         {{-- qui il contenuto che cambierà a seconda della sezione visualizzata --}}
+        <div class="content">
+            @yield('content')
 
-        @yield('content')
+        </div>
 
     </div>
 

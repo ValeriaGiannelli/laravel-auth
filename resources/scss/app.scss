@@ -14,3 +14,13 @@
         list-style:none;
     }
 };
+
+.my_view{
+    width:100%;
+    height: calc(100vh - 40px);
+}
+
+.content{
+    overflow: auto;
+    width: 100%;
+}
